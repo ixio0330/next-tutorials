@@ -1,3 +1,7 @@
+import './ui/global.css';
+import { inter } from './ui/fonts';
+
+// RootLayout 필수, 모든 페이지에서 공유
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
