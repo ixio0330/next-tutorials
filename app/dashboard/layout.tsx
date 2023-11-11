@@ -1,4 +1,11 @@
 import SideNav from "../ui/dashboard/sidenav";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Acme Dashboard',
+  description: 'The official Next.js Course Dashboard, built with App Router.',
+  metadataBase: new URL('https://next-tutorials-phi.vercel.app'),
+};
 
 // 레이아웃은 1회만 렌더링
 export default function Layout({ children }: { children: React.ReactNode }) {
